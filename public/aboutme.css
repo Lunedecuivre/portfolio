@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  color: white;
+  position: absolute;
+  z-index: 3;
+  font-size: 4.3rem;
+  top: 55vh;
+  right: 10vw;
+  text-align: right;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a {
+  color: white;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#svg2 {
+  width: 100vh;
+  position: absolute;
+  z-index: 2;
+  left: -5vw;
+  top: 5vh;
+}
+
+#photo {
+  position: absolute;
+  z-index: 0;
+  height: 100vh;
+  opacity: 0.8;
+  right: 3vw;
+}
+
+.download {
+  position: absolute;
+  z-index: 4;
+  bottom: 5vh;
+  color: white;
+  font-weight: bolder;
+}
+
+h3 {
+  color: white;
+  position: absolute;
+  z-index: 3;
+  font-size: 3rem;
+  top: 1vh;
+  left: 13vw;
+  text-align: right;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#cv {
+  position: absolute;
+  z-index: 2;
+  width: 40vw;
+  left: 1vw;
+  top: -5vh;
+}
+.path2 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#logo {
+  width: 5vw;
+  right: 0;
+  position: absolute;
+  margin: 2vw;
+}
+
+#home {
+  position: relative;
+  float: right;
+  right: -6vw;
+  top: 20vh;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  transform: rotate(-90deg);
+}

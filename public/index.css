@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  width: 100vw;
+}
+
+.path2 {
+  color: white;
+  position: absolute;
+  z-index: 3;
+  font-size: 3.6rem;
+  top: 55vh;
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+  left: 5vw;
+}
+
+a {
+  color: white;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 0px 10px white;
+}
+#logo {
+  position: absolute;
+  z-index: 0;
+  width: 45vw;
+  left: -5vw;
+  top: 7vh;
+  opacity: 0.4;
+}
+
+#cadre {
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  right: 10vw;
+  top: 0;
+}
+
+#projets {
+  position: absolute;
+  z-index: 4;
+  right: 4vw;
+  top: 15vw;
+  font-size: 1.5rem;
+}
+
+#aboutme {
+  position: absolute;
+  z-index: 4;
+  bottom: 7vh;
+  left: 55vw;
+  font-size: 1.5rem;
+}
+
+#contact {
+  position: relative;
+  z-index: 4;
+  left: 30vw;
+  top: 7vh;
+  font-size: 1.5rem;
+}
+
+#photo {
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  opacity: 0.9;
+  right: 0;
+}
+
+.path1 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 5s linear forwards;
+}
+
+.path2 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+#svg2 {
+  height: 90vh;
+  width: 80vw;
+  position: absolute;
+  z-index: 2;
+  right: 5vw;
+  top: 5vh;
+}
+
+#svg1 {
+  height: 70vh;
+  width: 60vw;
+  position: absolute;
+  z-index: 2;
+  top: 30vh;
+  left: 5vw;
+  filter: drop-shadow(2px 1px 8px white);
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
